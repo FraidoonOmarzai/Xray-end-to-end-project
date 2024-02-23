@@ -1,0 +1,19 @@
+# external packages
+joblib
+tqdm
+torch
+torchvision
+dvc
+mlflow
+ipykernel
+pandas
+numpy
+seaborn
+pytest
+tox
+black
+flake8
+mypy
+
+# local package
+-e .
