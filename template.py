@@ -16,6 +16,7 @@ list_of_files = [
     f"{project_name}/entity/config_entity.py",
     f"{project_name}/pipeline/__init__.py",
     f"{project_name}/constants/__init__.py",
+    f"{project_name}/components/__init__.py",
     f"{project_name}/cloud_storage/__init__.py",
     f"{project_name}/ml/__init__.py",
     f"{project_name}/exception/__init__.py",
