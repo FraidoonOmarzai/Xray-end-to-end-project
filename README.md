@@ -43,3 +43,7 @@ pip install -r requirements.txt
 - adding cloud_storage/s3_operations.py
 - We will download the data from AWS S3 to our local disk and the fun for vice versa
 - adding dvc to run the pipeline
+
+7. **Data Transformation**
+- we will use torchvision.transforms
+- we will use dataloader and return the dataset
