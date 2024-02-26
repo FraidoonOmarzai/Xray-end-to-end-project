@@ -42,3 +42,4 @@ pip install -r requirements.txt
 - Adding data from local disk to S3, define IAM user, aws configure 
 - adding cloud_storage/s3_operations.py
 - We will download the data from AWS S3 to our local disk and the fun for vice versa
+- adding dvc to run the pipeline

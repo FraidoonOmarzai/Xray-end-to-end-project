@@ -1,0 +1,9 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python Xray/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: Xray/pipeline/stage_01_data_ingestion.py
+      hash: md5
+      md5: 63ba1f1c28e81c1419ed748367f368e7
+      size: 943
