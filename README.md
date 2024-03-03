@@ -47,3 +47,6 @@ pip install -r requirements.txt
 7. **Data Transformation**
 - we will use torchvision.transforms
 - we will use dataloader and return the dataset
+
+8. **Model Training**
+- run the training pipeline
