@@ -50,3 +50,5 @@ pip install -r requirements.txt
 
 8. **Model Training**
 - run the training pipeline
+
+9. **Model Evaluation**
