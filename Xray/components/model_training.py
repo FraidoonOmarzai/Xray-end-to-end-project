@@ -191,6 +191,7 @@ class ModelTrainer:
             os.makedirs(self.model_trainer_config.artifact_dir, exist_ok=True)
 
             torch.save(model, self.model_trainer_config.trained_model_path)
+            # torch.save(model, 'model/model.pt') 
 
             train_transforms_obj = joblib.load(
                 self.data_transformation_artifact.train_transform_file_path

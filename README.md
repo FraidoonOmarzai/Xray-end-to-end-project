@@ -52,3 +52,11 @@ pip install -r requirements.txt
 - run the training pipeline
 
 9. **Model Evaluation**
+
+10. **Model Pusher**
+- not completed yet
+
+11. **Streamlit**
+- install streamlit
+- add code to app.py
+- copy the save model to a new directory `model/model.pt`
