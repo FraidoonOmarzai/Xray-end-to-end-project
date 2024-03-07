@@ -60,3 +60,20 @@ pip install -r requirements.txt
 - install streamlit
 - add code to app.py
 - copy the save model to a new directory `model/model.pt`
+
+12. **Adding docker images**
+- adding code to docker file
+- buid the docker image
+```bash
+docker build -t xray .
+docker ps
+docker images
+```
+- running our app using docker
+```bash
+docker run -p 8080:8080 xray
+```
+- open the browser and run
+```bash
+htpp://localhost:8080
+```
