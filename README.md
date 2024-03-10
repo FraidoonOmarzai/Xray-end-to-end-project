@@ -77,3 +77,45 @@ docker run -p 8080:8080 xray
 ```bash
 htpp://localhost:8080
 ```
+
+13. **Deploying the project using CI/CD**
+- first deploy the project to docker-hub and then to ec2
+
+###############AWS Section################
+
+**Note:** we will deploy AWS-CICD using Github-Actions
+
+```bash
+# AWS 
+13.1. Login to AWS console
+13.2. Create IAM user with ec2fullaccess
+13.3. Create EC2 : It is virtual machine and install docker in EC2
+#optinal
+sudo apt-get update
+sudo apt-get upgrade -y
+
+#required
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker ubuntu
+```
+
+13.4.  Configure EC2 as self-hosted runner:
+```bash
+setting-->actions-->runner-->new self hosted runner--> choose os--> copy each command and run it on EC2 Instance Connect
+```
+
+- Setup github secrets:
+```bash
+# Docker secret
+DOCKER_USERNAME=fraidoonjan
+DOCKER_PASSWORD=...
+
+REGISTRY=fraidoonjan
+IMAGE_NAME=xrayapp
+
+# AWS secret
+AWS_ACCESS_KEY_ID=...
+AWS_SECRET_ACCESS_KEY=...
+AWS_REGION=eu-west-2
+```
